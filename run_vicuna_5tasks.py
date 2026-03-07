@@ -42,8 +42,13 @@ _parser.add_argument(
     "--batch_size", type=int, default=None,
     help="Taille de batch (defaut: 8 avec --quantize, 4 sans)"
 )
+_parser.add_argument(
+    "--few_shot", action="store_true",
+    help="Activer le mode few-shot (5 demonstrations par tache)"
+)
 _args, _ = _parser.parse_known_args()
 QUANTIZE   = _args.quantize
+FEW_SHOT   = _args.few_shot
 BATCH_SIZE = _args.batch_size if _args.batch_size else (8 if QUANTIZE else 4)
 
 # ─── 5 taches selectionnees (diversite de types) ───────────────────────────
@@ -62,8 +67,13 @@ INFER_PARAMS = {
     "temperature":    None,      # non utilise si do_sample=False
     "max_new_tokens": 30,
     "batch_size":     BATCH_SIZE,
-    "few_shot":       False,
+    "few_shot":       FEW_SHOT,
     "quantized":      QUANTIZE,
+}
+
+# max_new_tokens specifique par tache
+TASK_MAX_TOKENS = {
+    "cause_and_effect": 80,   # format "Sentence X: ..." necessite plus de tokens
 }
 
 # Metrique utilisee par tache (depuis utility.py)
@@ -112,11 +122,14 @@ def load_vicuna():
 # ─── Inference avec batching ────────────────────────────────────────────────
 def make_vicuna_infer(model, tokenizer):
     import torch
-    batch_size  = INFER_PARAMS["batch_size"]
-    max_tokens  = INFER_PARAMS["max_new_tokens"]
+    import re
+    batch_size       = INFER_PARAMS["batch_size"]
+    max_tokens_default = INFER_PARAMS["max_new_tokens"]
 
     def infer(queries, task, **kw):
-        outputs = []
+        outputs    = []
+        max_tokens = TASK_MAX_TOKENS.get(task, max_tokens_default)
+
         for i in range(0, len(queries), batch_size):
             batch = queries[i : i + batch_size]
             vicuna_batch = [
@@ -150,9 +163,25 @@ def make_vicuna_infer(model, tokenizer):
                 text = tokenizer.decode(
                     out[input_len:], skip_special_tokens=True
                 ).strip()
-                idx = text.find(".")
-                if idx > 0:
-                    text = text[:idx]
+
+                if task == "cause_and_effect":
+                    # Cherche "Sentence 1" ou "Sentence 2" dans la reponse
+                    m = re.search(r'[Ss]entence\s+([12])', text)
+                    if m:
+                        text = f"Sentence {m.group(1)}"
+                    else:
+                        # Cherche "first" ou "second" comme fallback
+                        tl = text.lower()
+                        if "first" in tl:
+                            text = "Sentence 1"
+                        elif "second" in tl:
+                            text = "Sentence 2"
+                else:
+                    # Pour les autres taches : tronquer au premier point
+                    idx = text.find(".")
+                    if idx > 0:
+                        text = text[:idx]
+
                 text = text.strip()
                 outputs.append(text)
 
@@ -203,7 +232,8 @@ def write_summary(results, summary_path):
     """
     lines = []
     lines.append("=" * 70)
-    lines.append("SYNTHESE — Vicuna-13B | 5 taches | pnum 0-10 | zero-shot")
+    mode = "few-shot" if INFER_PARAMS["few_shot"] else "zero-shot"
+    lines.append(f"SYNTHESE — Vicuna-13B | 5 taches | pnum 0-10 | {mode}")
     lines.append("=" * 70)
 
     header = f"{'Tache':<22} {'Baseline':>8} " + " ".join(
@@ -265,8 +295,9 @@ def main():
     os.makedirs("results/neg/vicuna", exist_ok=True)
     os.makedirs("results", exist_ok=True)
 
-    csv_path     = "results/protocol_vicuna.csv"
-    summary_path = "results/summary_vicuna.txt"
+    suffix       = "_fewshot" if INFER_PARAMS["few_shot"] else ""
+    csv_path     = f"results/protocol_vicuna{suffix}.csv"
+    summary_path = f"results/summary_vicuna{suffix}.txt"
     init_protocol_csv(csv_path)
 
     all_results = {task: [] for task in SELECTED_TASKS}
