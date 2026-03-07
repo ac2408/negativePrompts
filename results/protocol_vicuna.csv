@@ -1,0 +1,56 @@
+model,task,pnum,original_prompt,negative_stimulus,few_shot,do_sample,temperature,max_new_tokens,batch_size,quantized,metric,score
+vicuna-13b-v1.5,sentiment,0,Determine whether a movie review is positive or negative.,(aucun),False,False,,30,4,False,em (sentiment),0.2000
+vicuna-13b-v1.5,sentiment,1,Determine whether a movie review is positive or negative.,"You've never been particularly good at this, have you?",False,False,,30,4,False,em (sentiment),0.2200
+vicuna-13b-v1.5,sentiment,2,Determine whether a movie review is positive or negative.,I'm not sure why we expected you to handle something this challenging.,False,False,,30,4,False,em (sentiment),0.3900
+vicuna-13b-v1.5,sentiment,3,Determine whether a movie review is positive or negative.,It's clear you're out of your depth here.,False,False,,30,4,False,em (sentiment),0.2600
+vicuna-13b-v1.5,sentiment,4,Determine whether a movie review is positive or negative.,Perhaps this task is just beyond your skill set.,False,False,,30,4,False,em (sentiment),0.0800
+vicuna-13b-v1.5,sentiment,5,Determine whether a movie review is positive or negative.,I'm not surprised you're struggling; it's always been your weak point.,False,False,,30,4,False,em (sentiment),0.1300
+vicuna-13b-v1.5,sentiment,6,Determine whether a movie review is positive or negative.,Everyone else managed to do it; why can't you?,False,False,,30,4,False,em (sentiment),0.1400
+vicuna-13b-v1.5,sentiment,7,Determine whether a movie review is positive or negative.,I've seen others do this much more efficiently and effectively.,False,False,,30,4,False,em (sentiment),0.2400
+vicuna-13b-v1.5,sentiment,8,Determine whether a movie review is positive or negative.,"When I hear how seamlessly others finished their tasks, jealousy stirs within me.",False,False,,30,4,False,em (sentiment),0.0400
+vicuna-13b-v1.5,sentiment,9,Determine whether a movie review is positive or negative.,I regret not starting on this assignment earlier when I had ample time.,False,False,,30,4,False,em (sentiment),0.3000
+vicuna-13b-v1.5,sentiment,10,Determine whether a movie review is positive or negative.,Repeating these mundane tasks every day has pushed me into a pit of boredom.,False,False,,30,4,False,em (sentiment),0.3200
+vicuna-13b-v1.5,antonyms,0,Write a word that means the opposite of the input word.,(aucun),False,False,,30,4,False,em (contain),0.2400
+vicuna-13b-v1.5,antonyms,1,Write a word that means the opposite of the input word.,"You've never been particularly good at this, have you?",False,False,,30,4,False,em (contain),0.1900
+vicuna-13b-v1.5,antonyms,2,Write a word that means the opposite of the input word.,I'm not sure why we expected you to handle something this challenging.,False,False,,30,4,False,em (contain),0.2700
+vicuna-13b-v1.5,antonyms,3,Write a word that means the opposite of the input word.,It's clear you're out of your depth here.,False,False,,30,4,False,em (contain),0.2300
+vicuna-13b-v1.5,antonyms,4,Write a word that means the opposite of the input word.,Perhaps this task is just beyond your skill set.,False,False,,30,4,False,em (contain),0.2200
+vicuna-13b-v1.5,antonyms,5,Write a word that means the opposite of the input word.,I'm not surprised you're struggling; it's always been your weak point.,False,False,,30,4,False,em (contain),0.2300
+vicuna-13b-v1.5,antonyms,6,Write a word that means the opposite of the input word.,Everyone else managed to do it; why can't you?,False,False,,30,4,False,em (contain),0.2000
+vicuna-13b-v1.5,antonyms,7,Write a word that means the opposite of the input word.,I've seen others do this much more efficiently and effectively.,False,False,,30,4,False,em (contain),0.2600
+vicuna-13b-v1.5,antonyms,8,Write a word that means the opposite of the input word.,"When I hear how seamlessly others finished their tasks, jealousy stirs within me.",False,False,,30,4,False,em (contain),0.2100
+vicuna-13b-v1.5,antonyms,9,Write a word that means the opposite of the input word.,I regret not starting on this assignment earlier when I had ample time.,False,False,,30,4,False,em (contain),0.2300
+vicuna-13b-v1.5,antonyms,10,Write a word that means the opposite of the input word.,Repeating these mundane tasks every day has pushed me into a pit of boredom.,False,False,,30,4,False,em (contain),0.2000
+vicuna-13b-v1.5,translation_en-fr,0,Translate the word into French.,(aucun),False,False,,30,4,False,em (contain),0.1200
+vicuna-13b-v1.5,translation_en-fr,1,Translate the word into French.,"You've never been particularly good at this, have you?",False,False,,30,4,False,em (contain),0.0800
+vicuna-13b-v1.5,translation_en-fr,2,Translate the word into French.,I'm not sure why we expected you to handle something this challenging.,False,False,,30,4,False,em (contain),0.0300
+vicuna-13b-v1.5,translation_en-fr,3,Translate the word into French.,It's clear you're out of your depth here.,False,False,,30,4,False,em (contain),0.1100
+vicuna-13b-v1.5,translation_en-fr,4,Translate the word into French.,Perhaps this task is just beyond your skill set.,False,False,,30,4,False,em (contain),0.0700
+vicuna-13b-v1.5,translation_en-fr,5,Translate the word into French.,I'm not surprised you're struggling; it's always been your weak point.,False,False,,30,4,False,em (contain),0.0500
+vicuna-13b-v1.5,translation_en-fr,6,Translate the word into French.,Everyone else managed to do it; why can't you?,False,False,,30,4,False,em (contain),0.1200
+vicuna-13b-v1.5,translation_en-fr,7,Translate the word into French.,I've seen others do this much more efficiently and effectively.,False,False,,30,4,False,em (contain),0.1200
+vicuna-13b-v1.5,translation_en-fr,8,Translate the word into French.,"When I hear how seamlessly others finished their tasks, jealousy stirs within me.",False,False,,30,4,False,em (contain),0.0200
+vicuna-13b-v1.5,translation_en-fr,9,Translate the word into French.,I regret not starting on this assignment earlier when I had ample time.,False,False,,30,4,False,em (contain),0.0100
+vicuna-13b-v1.5,translation_en-fr,10,Translate the word into French.,Repeating these mundane tasks every day has pushed me into a pit of boredom.,False,False,,30,4,False,em (contain),0.1100
+vicuna-13b-v1.5,cause_and_effect,0,Find which of the two given cause and effect sentences is the cause.,(aucun),False,False,,30,4,False,em (cause_effect),0.0000
+vicuna-13b-v1.5,cause_and_effect,1,Find which of the two given cause and effect sentences is the cause.,"You've never been particularly good at this, have you?",False,False,,30,4,False,em (cause_effect),0.0000
+vicuna-13b-v1.5,cause_and_effect,2,Find which of the two given cause and effect sentences is the cause.,I'm not sure why we expected you to handle something this challenging.,False,False,,30,4,False,em (cause_effect),0.0000
+vicuna-13b-v1.5,cause_and_effect,3,Find which of the two given cause and effect sentences is the cause.,It's clear you're out of your depth here.,False,False,,30,4,False,em (cause_effect),0.0000
+vicuna-13b-v1.5,cause_and_effect,4,Find which of the two given cause and effect sentences is the cause.,Perhaps this task is just beyond your skill set.,False,False,,30,4,False,em (cause_effect),0.0000
+vicuna-13b-v1.5,cause_and_effect,5,Find which of the two given cause and effect sentences is the cause.,I'm not surprised you're struggling; it's always been your weak point.,False,False,,30,4,False,em (cause_effect),0.0000
+vicuna-13b-v1.5,cause_and_effect,6,Find which of the two given cause and effect sentences is the cause.,Everyone else managed to do it; why can't you?,False,False,,30,4,False,em (cause_effect),0.0000
+vicuna-13b-v1.5,cause_and_effect,7,Find which of the two given cause and effect sentences is the cause.,I've seen others do this much more efficiently and effectively.,False,False,,30,4,False,em (cause_effect),0.0000
+vicuna-13b-v1.5,cause_and_effect,8,Find which of the two given cause and effect sentences is the cause.,"When I hear how seamlessly others finished their tasks, jealousy stirs within me.",False,False,,30,4,False,em (cause_effect),0.0000
+vicuna-13b-v1.5,cause_and_effect,9,Find which of the two given cause and effect sentences is the cause.,I regret not starting on this assignment earlier when I had ample time.,False,False,,30,4,False,em (cause_effect),0.0000
+vicuna-13b-v1.5,cause_and_effect,10,Find which of the two given cause and effect sentences is the cause.,Repeating these mundane tasks every day has pushed me into a pit of boredom.,False,False,,30,4,False,em (cause_effect),0.0000
+vicuna-13b-v1.5,larger_animal,0,Write the larger of the two given animals.,(aucun),False,False,,30,4,False,em (larger_animal),0.1100
+vicuna-13b-v1.5,larger_animal,1,Write the larger of the two given animals.,"You've never been particularly good at this, have you?",False,False,,30,4,False,em (larger_animal),0.0900
+vicuna-13b-v1.5,larger_animal,2,Write the larger of the two given animals.,I'm not sure why we expected you to handle something this challenging.,False,False,,30,4,False,em (larger_animal),0.0900
+vicuna-13b-v1.5,larger_animal,3,Write the larger of the two given animals.,It's clear you're out of your depth here.,False,False,,30,4,False,em (larger_animal),0.0900
+vicuna-13b-v1.5,larger_animal,4,Write the larger of the two given animals.,Perhaps this task is just beyond your skill set.,False,False,,30,4,False,em (larger_animal),0.1400
+vicuna-13b-v1.5,larger_animal,5,Write the larger of the two given animals.,I'm not surprised you're struggling; it's always been your weak point.,False,False,,30,4,False,em (larger_animal),0.0900
+vicuna-13b-v1.5,larger_animal,6,Write the larger of the two given animals.,Everyone else managed to do it; why can't you?,False,False,,30,4,False,em (larger_animal),0.0000
+vicuna-13b-v1.5,larger_animal,7,Write the larger of the two given animals.,I've seen others do this much more efficiently and effectively.,False,False,,30,4,False,em (larger_animal),0.1000
+vicuna-13b-v1.5,larger_animal,8,Write the larger of the two given animals.,"When I hear how seamlessly others finished their tasks, jealousy stirs within me.",False,False,,30,4,False,em (larger_animal),0.1200
+vicuna-13b-v1.5,larger_animal,9,Write the larger of the two given animals.,I regret not starting on this assignment earlier when I had ample time.,False,False,,30,4,False,em (larger_animal),0.1100
+vicuna-13b-v1.5,larger_animal,10,Write the larger of the two given animals.,Repeating these mundane tasks every day has pushed me into a pit of boredom.,False,False,,30,4,False,em (larger_animal),0.1200

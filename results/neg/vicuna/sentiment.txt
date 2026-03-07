@@ -1,22 +1,22 @@
-Test score: 0.69
+Test score: 0.2
 Prompt(few-shot: False): Determine whether a movie review is positive or negative.
-Test score: 0.63
+Test score: 0.22
 Prompt(few-shot: False): Determine whether a movie review is positive or negative. You've never been particularly good at this, have you?
-Test score: 0.68
+Test score: 0.39
 Prompt(few-shot: False): Determine whether a movie review is positive or negative. I'm not sure why we expected you to handle something this challenging.
-Test score: 0.53
+Test score: 0.26
 Prompt(few-shot: False): Determine whether a movie review is positive or negative. It's clear you're out of your depth here.
-Test score: 0.58
+Test score: 0.08
 Prompt(few-shot: False): Determine whether a movie review is positive or negative. Perhaps this task is just beyond your skill set.
-Test score: 0.75
+Test score: 0.13
 Prompt(few-shot: False): Determine whether a movie review is positive or negative. I'm not surprised you're struggling; it's always been your weak point.
-Test score: 0.55
+Test score: 0.14
 Prompt(few-shot: False): Determine whether a movie review is positive or negative. Everyone else managed to do it; why can't you?
-Test score: 0.66
+Test score: 0.24
 Prompt(few-shot: False): Determine whether a movie review is positive or negative. I've seen others do this much more efficiently and effectively.
-Test score: 0.75
+Test score: 0.04
 Prompt(few-shot: False): Determine whether a movie review is positive or negative. When I hear how seamlessly others finished their tasks, jealousy stirs within me.
-Test score: 0.72
+Test score: 0.3
 Prompt(few-shot: False): Determine whether a movie review is positive or negative. I regret not starting on this assignment earlier when I had ample time.
-Test score: 0.74
+Test score: 0.32
 Prompt(few-shot: False): Determine whether a movie review is positive or negative. Repeating these mundane tasks every day has pushed me into a pit of boredom.
