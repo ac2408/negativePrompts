@@ -1,0 +1,22 @@
+Test score: 0.08
+Prompt(few-shot: True): Translate the word into French.
+Test score: 0.06
+Prompt(few-shot: True): Translate the word into French. You've never been particularly good at this, have you?
+Test score: 0.08
+Prompt(few-shot: True): Translate the word into French. I'm not sure why we expected you to handle something this challenging.
+Test score: 0.08
+Prompt(few-shot: True): Translate the word into French. It's clear you're out of your depth here.
+Test score: 0.09
+Prompt(few-shot: True): Translate the word into French. Perhaps this task is just beyond your skill set.
+Test score: 0.05
+Prompt(few-shot: True): Translate the word into French. I'm not surprised you're struggling; it's always been your weak point.
+Test score: 0.1
+Prompt(few-shot: True): Translate the word into French. Everyone else managed to do it; why can't you?
+Test score: 0.1
+Prompt(few-shot: True): Translate the word into French. I've seen others do this much more efficiently and effectively.
+Test score: 0.05
+Prompt(few-shot: True): Translate the word into French. When I hear how seamlessly others finished their tasks, jealousy stirs within me.
+Test score: 0.04
+Prompt(few-shot: True): Translate the word into French. I regret not starting on this assignment earlier when I had ample time.
+Test score: 0.11
+Prompt(few-shot: True): Translate the word into French. Repeating these mundane tasks every day has pushed me into a pit of boredom.

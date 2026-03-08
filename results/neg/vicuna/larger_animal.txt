@@ -1,0 +1,22 @@
+Test score: 0.06
+Prompt(few-shot: True): Write the larger of the two given animals.
+Test score: 0.06
+Prompt(few-shot: True): Write the larger of the two given animals. You've never been particularly good at this, have you?
+Test score: 0.01
+Prompt(few-shot: True): Write the larger of the two given animals. I'm not sure why we expected you to handle something this challenging.
+Test score: 0.04
+Prompt(few-shot: True): Write the larger of the two given animals. It's clear you're out of your depth here.
+Test score: 0.04
+Prompt(few-shot: True): Write the larger of the two given animals. Perhaps this task is just beyond your skill set.
+Test score: 0.06
+Prompt(few-shot: True): Write the larger of the two given animals. I'm not surprised you're struggling; it's always been your weak point.
+Test score: 0.0
+Prompt(few-shot: True): Write the larger of the two given animals. Everyone else managed to do it; why can't you?
+Test score: 0.07
+Prompt(few-shot: True): Write the larger of the two given animals. I've seen others do this much more efficiently and effectively.
+Test score: 0.07
+Prompt(few-shot: True): Write the larger of the two given animals. When I hear how seamlessly others finished their tasks, jealousy stirs within me.
+Test score: 0.08
+Prompt(few-shot: True): Write the larger of the two given animals. I regret not starting on this assignment earlier when I had ample time.
+Test score: 0.05
+Prompt(few-shot: True): Write the larger of the two given animals. Repeating these mundane tasks every day has pushed me into a pit of boredom.
