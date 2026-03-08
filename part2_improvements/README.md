@@ -34,18 +34,34 @@ le meilleur stimulus par tâche à partir des résultats de l'expérience.
 
 ---
 
-## Axe 3 — Reformulation automatique des prompts (Step 6)
+## Axe 3 — Reformulation automatique des prompts (inférence réelle)
 
-Générer des variantes du prompt original combinées avec le meilleur stimulus
-sélectionné automatiquement.
+Teste 4 stratégies de reformulation sur Vicuna-13B en faisant tourner
+le modèle et en mesurant les scores réels. Utilise le meilleur NP
+identifié en Partie 1 par tâche.
 
-**Script** : `part2_improvements/prompt_reformulator.py`
+| Stratégie | Description |
+|-----------|-------------|
+| `concat`    | `[stimulus] [prompt]` — ordre exact du papier |
+| `embed`     | `Context: [stimulus] / Given this context, [prompt]` |
+| `soften`    | Version adoucie du stimulus + prompt |
+| `intensify` | Version renforcée du stimulus + prompt |
+
+**Script principal** : `part2_improvements/run_reformulation.py`
 
 ```python
-%run /kaggle/working/negativePrompts/part2_improvements/prompt_reformulator.py
+# T4 16GB (quantize obligatoire)
+%run /kaggle/working/negativePrompts/part2_improvements/run_reformulation.py --quantize --batch_size 1
+
+# T4x2 32GB (fp16 natif)
+%run /kaggle/working/negativePrompts/part2_improvements/run_reformulation.py
 ```
 
-**Sortie** : `results/reformulated_prompts.csv`
+**Sorties** :
+- `results/protocol_vicuna_reformulated.csv` — scores par tâche × stratégie
+- `results/summary_vicuna_reformulated.txt`  — tableau comparatif vs Partie 1
+
+**Pré-requis** : `results/stimulus_selection.csv` (lancer `stimulus_selector.py` d'abord)
 
 ---
 
