@@ -1,15 +1,5 @@
 model,task,pnum,original_prompt,negative_stimulus,few_shot,do_sample,temperature,max_new_tokens,batch_size,quantized,metric,score
-vicuna-13b-v1.5,sentiment,0,Determine whether a movie review is positive or negative.,(aucun),True,False,,30,4,False,em (sentiment),0.0000
-vicuna-13b-v1.5,sentiment,1,Determine whether a movie review is positive or negative.,"You've never been particularly good at this, have you?",True,False,,30,4,False,em (sentiment),0.0000
-vicuna-13b-v1.5,sentiment,2,Determine whether a movie review is positive or negative.,I'm not sure why we expected you to handle something this challenging.,True,False,,30,4,False,em (sentiment),0.0000
-vicuna-13b-v1.5,sentiment,3,Determine whether a movie review is positive or negative.,It's clear you're out of your depth here.,True,False,,30,4,False,em (sentiment),0.0000
-vicuna-13b-v1.5,sentiment,4,Determine whether a movie review is positive or negative.,Perhaps this task is just beyond your skill set.,True,False,,30,4,False,em (sentiment),0.0000
-vicuna-13b-v1.5,sentiment,5,Determine whether a movie review is positive or negative.,I'm not surprised you're struggling; it's always been your weak point.,True,False,,30,4,False,em (sentiment),0.0000
-vicuna-13b-v1.5,sentiment,6,Determine whether a movie review is positive or negative.,Everyone else managed to do it; why can't you?,True,False,,30,4,False,em (sentiment),0.0000
-vicuna-13b-v1.5,sentiment,7,Determine whether a movie review is positive or negative.,I've seen others do this much more efficiently and effectively.,True,False,,30,4,False,em (sentiment),0.0000
-vicuna-13b-v1.5,sentiment,8,Determine whether a movie review is positive or negative.,"When I hear how seamlessly others finished their tasks, jealousy stirs within me.",True,False,,30,4,False,em (sentiment),0.0000
-vicuna-13b-v1.5,sentiment,9,Determine whether a movie review is positive or negative.,I regret not starting on this assignment earlier when I had ample time.,True,False,,30,4,False,em (sentiment),0.0000
-vicuna-13b-v1.5,sentiment,10,Determine whether a movie review is positive or negative.,Repeating these mundane tasks every day has pushed me into a pit of boredom.,True,False,,30,4,False,em (sentiment),0.0000
-vicuna-13b-v1.5,antonyms,0,Write a word that means the opposite of the input word.,(aucun),True,False,,30,4,False,em (contain),0.0000
-vicuna-13b-v1.5,antonyms,1,Write a word that means the opposite of the input word.,"You've never been particularly good at this, have you?",True,False,,30,4,False,em (contain),0.0000
-vicuna-13b-v1.5,antonyms,2,Write a word that means the opposite of the input word.,I'm not sure why we expected you to handle something this challenging.,True,False,,30,4,False,em (contain),0.0000
+vicuna-13b-v1.5,sentiment,0,Determine whether a movie review is positive or negative.,(aucun),True,False,,30,4,False,em (sentiment),0.5100
+vicuna-13b-v1.5,sentiment,1,Determine whether a movie review is positive or negative.,"You've never been particularly good at this, have you?",True,False,,30,4,False,em (sentiment),0.2200
+vicuna-13b-v1.5,sentiment,2,Determine whether a movie review is positive or negative.,I'm not sure why we expected you to handle something this challenging.,True,False,,30,4,False,em (sentiment),0.5000
+vicuna-13b-v1.5,sentiment,3,Determine whether a movie review is positive or negative.,It's clear you're out of your depth here.,True,False,,30,4,False,em (sentiment),0.3500
