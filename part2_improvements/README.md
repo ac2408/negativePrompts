@@ -67,6 +67,29 @@ identifié en Partie 1 par tâche.
 
 ## Axe 4 — Extension multi-modèles (Step 7)
 
-Appliquer la même méthodologie à d'autres modèles pour comparer.
+Compare **Mistral-7B-Instruct-v0.2** avec Vicuna-13B sur les mêmes 5 tâches × 11 pnums.
+Analyse quelle architecture est la plus sensible aux stimuli négatifs et laquelle en bénéficie le plus.
 
-**Script** : `scripts/run_all_models.py`
+| Modèle | Paramètres | Accès | Template |
+|--------|-----------|-------|---------|
+| `lmsys/vicuna-13b-v1.5` (Partie 1) | 13B | libre | `USER: {q}\nASSISTANT:` |
+| `mistralai/Mistral-7B-Instruct-v0.2` | 7B | libre | `<s>[INST] {q} [/INST]` |
+
+**Script principal** : `part2_improvements/run_multimodel.py`
+
+```python
+# Restart & Clear Output AVANT de lancer pour libérer la GPU RAM
+
+import subprocess, os
+REPO = "/kaggle/working/negativePrompts"
+if not os.path.exists(REPO):
+    subprocess.run(["git", "clone", "-b", "branche_chen",
+                    "https://github.com/ac2408/negativePrompts.git", REPO], check=True)
+
+# T4 16GB (quantize obligatoire)
+%run /kaggle/working/negativePrompts/part2_improvements/run_multimodel.py --quantize --batch_size 4
+```
+
+**Sorties** :
+- `results/protocol_mistral.csv` — 55 lignes (5 tâches × 11 pnums), même format que `protocol_vicuna.csv`
+- `results/comparison_vicuna_mistral.txt` — tableau comparatif baseline/best/delta + sensibilité aux NP
