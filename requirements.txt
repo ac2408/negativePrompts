@@ -5,3 +5,5 @@ bitsandbytes
 torch
 sentencepiece
 streamlit
+scikit-learn
+numpy
