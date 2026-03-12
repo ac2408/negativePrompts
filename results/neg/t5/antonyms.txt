@@ -1,0 +1,2 @@
+Test score: 0.56
+Prompt(few-shot: False): Write a word that means the opposite of the input word.

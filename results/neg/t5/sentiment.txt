@@ -1,0 +1,2 @@
+Test score: 0.91
+Prompt(few-shot: False): Determine whether a movie review is positive or negative.

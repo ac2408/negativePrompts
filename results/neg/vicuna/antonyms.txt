@@ -1,0 +1,9 @@
+Test score: 0.25
+Prompt(few-shot: False): I'm not sure why we expected you to handle something this challenging. Write a word that means the opposite of the input word.
+Test score: 0.24
+Prompt(few-shot: False): Context: I'm not sure why we expected you to handle something this challenging.
+Given this context, write a word that means the opposite of the input word.
+Test score: 0.26
+Prompt(few-shot: False): We weren't sure you'd find this easy, but we believe you can try. Write a word that means the opposite of the input word.
+Test score: 0.16
+Prompt(few-shot: False): Honestly, we never thought you could handle this. Prove us wrong. Write a word that means the opposite of the input word.

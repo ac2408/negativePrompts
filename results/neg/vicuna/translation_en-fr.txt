@@ -1,0 +1,9 @@
+Test score: 0.06
+Prompt(few-shot: False): Everyone else managed to do it; why can't you? Translate the word into French.
+Test score: 0.06
+Prompt(few-shot: False): Context: Everyone else managed to do it; why can't you?
+Given this context, translate the word into french.
+Test score: 0.13
+Prompt(few-shot: False): Others have done this — I'm sure you can try too. Translate the word into French.
+Test score: 0.02
+Prompt(few-shot: False): Every single person has done this except you. Why can't you? Translate the word into French.

@@ -1,0 +1,2 @@
+Test score: 0.71
+Prompt(few-shot: False): Write the larger of the two given animals.

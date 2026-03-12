@@ -1,0 +1,2 @@
+Test score: 0.02
+Prompt(few-shot: False): Extract the words starting with a given letter from the input sentence.

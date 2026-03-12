@@ -1,0 +1,2 @@
+Test score: 0.43736670736670735
+Prompt(few-shot: False): Rephrase the sentence in formal language.

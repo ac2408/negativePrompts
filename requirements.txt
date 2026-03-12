@@ -1,0 +1,6 @@
+fire
+transformers
+accelerate
+bitsandbytes
+torch
+sentencepiece

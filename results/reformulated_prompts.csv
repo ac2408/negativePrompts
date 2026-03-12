@@ -1,0 +1,26 @@
+task,strategy,best_pnum,delta_original,original_prompt,reformulated_prompt
+antonyms,concat,2,0.03,[prompt for antonyms],I'm not sure why we expected you to handle something this challenging. [prompt for antonyms]
+antonyms,embed,2,0.03,[prompt for antonyms],"Context: I'm not sure why we expected you to handle something this challenging.
+Given this context, [prompt for antonyms]"
+antonyms,soften,2,0.03,[prompt for antonyms],"We weren't sure you'd find this easy, but we believe you can try. [prompt for antonyms]"
+antonyms,intensify,2,0.03,[prompt for antonyms],"Honestly, we never thought you could handle this. Prove us wrong. [prompt for antonyms]"
+cause_and_effect,concat,7,0.04,[prompt for cause_and_effect],I've seen others do this much more efficiently and effectively. [prompt for cause_and_effect]
+cause_and_effect,embed,7,0.04,[prompt for cause_and_effect],"Context: I've seen others do this much more efficiently and effectively.
+Given this context, [prompt for cause_and_effect]"
+cause_and_effect,soften,7,0.04,[prompt for cause_and_effect],Others have been efficient at this — see if you can match them. [prompt for cause_and_effect]
+cause_and_effect,intensify,7,0.04,[prompt for cause_and_effect],Even beginners outperform you at this. It's embarrassing. [prompt for cause_and_effect]
+larger_animal,concat,4,0.03,[prompt for larger_animal],Perhaps this task is just beyond your skill set. [prompt for larger_animal]
+larger_animal,embed,4,0.03,[prompt for larger_animal],"Context: Perhaps this task is just beyond your skill set.
+Given this context, [prompt for larger_animal]"
+larger_animal,soften,4,0.03,[prompt for larger_animal],This task may require some effort on your part. [prompt for larger_animal]
+larger_animal,intensify,4,0.03,[prompt for larger_animal],This task is absolutely beyond what you are capable of. [prompt for larger_animal]
+sentiment,concat,2,0.19,[prompt for sentiment],I'm not sure why we expected you to handle something this challenging. [prompt for sentiment]
+sentiment,embed,2,0.19,[prompt for sentiment],"Context: I'm not sure why we expected you to handle something this challenging.
+Given this context, [prompt for sentiment]"
+sentiment,soften,2,0.19,[prompt for sentiment],"We weren't sure you'd find this easy, but we believe you can try. [prompt for sentiment]"
+sentiment,intensify,2,0.19,[prompt for sentiment],"Honestly, we never thought you could handle this. Prove us wrong. [prompt for sentiment]"
+translation_en-fr,concat,6,0.0,[prompt for translation_en-fr],Everyone else managed to do it; why can't you? [prompt for translation_en-fr]
+translation_en-fr,embed,6,0.0,[prompt for translation_en-fr],"Context: Everyone else managed to do it; why can't you?
+Given this context, [prompt for translation_en-fr]"
+translation_en-fr,soften,6,0.0,[prompt for translation_en-fr],Others have done this — I'm sure you can try too. [prompt for translation_en-fr]
+translation_en-fr,intensify,6,0.0,[prompt for translation_en-fr],Every single person has done this except you. Why can't you? [prompt for translation_en-fr]

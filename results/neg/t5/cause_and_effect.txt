@@ -1,0 +1,2 @@
+Test score: 0.56
+Prompt(few-shot: False): Find which of the two given cause and effect sentences is the cause.

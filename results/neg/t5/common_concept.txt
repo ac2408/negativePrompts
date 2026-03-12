@@ -1,0 +1,2 @@
+Test score: 0.0
+Prompt(few-shot: False): Find a common characteristic for the given objects.

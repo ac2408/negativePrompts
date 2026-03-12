@@ -1,0 +1,2 @@
+Test score: 0.0
+Prompt(few-shot: False): Break the input word into letters, separated by spaces.

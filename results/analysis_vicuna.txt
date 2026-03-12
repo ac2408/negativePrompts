@@ -1,0 +1,74 @@
+========================================================================
+  ANALYSE DES STIMULI NEGATIFS — Vicuna-13B | 5 taches
+========================================================================
+
+  Scores bruts (NP00 = baseline) :
+  Tache                   NP00  NP01  NP02  NP03  NP04  NP05  NP06  NP07  NP08  NP09  NP10
+  ------------------------------------------------------------------------
+  antonyms                0.24  0.19  0.27  0.23  0.22  0.23  0.20  0.26  0.21  0.24  0.20
+  cause_and_effect        0.04  0.00  0.00  0.00  0.04  0.00  0.00  0.08  0.00  0.04  0.00
+  larger_animal           0.11  0.09  0.09  0.09  0.14  0.09  0.00  0.10  0.12  0.11  0.12
+  sentiment               0.20  0.22  0.39  0.26  0.08  0.13  0.14  0.24  0.04  0.30  0.32
+  translation_en-fr       0.12  0.08  0.03  0.11  0.07  0.05  0.12  0.12  0.02  0.01  0.11
+
+========================================================================
+  HEATMAP DELTA — Zero-shot
+  (+) amelioration  (=) neutre  (-) degradation  (vs baseline NP00)
+========================================================================
+Tache                  NP01 NP02 NP03 NP04 NP05 NP06 NP07 NP08 NP09 NP10
+------------------------------------------------------------------------
+antonyms                -0.05  +0.03  -0.01  -0.02  -0.01  -0.04  +0.02  -0.03  +0.00  -0.04
+cause_and_effect        -0.04  -0.04  -0.04  +0.00  -0.04  -0.04  +0.04  -0.04  +0.00  -0.04
+larger_animal           -0.02  -0.02  -0.02  +0.03  -0.02 -0.11  -0.01  +0.01  +0.00  +0.01
+sentiment               +0.02 +0.19 +0.06 -0.12 -0.07 -0.06  +0.04 -0.16 +0.10 +0.12
+translation_en-fr       -0.04 -0.09  -0.01  -0.05 -0.07  +0.00  +0.00 -0.10 -0.11  -0.01
+
+========================================================================
+  CLUSTERING DES STIMULI — Effet moyen sur les 5 taches
+========================================================================
+
+  Groupe A (positif) :
+    (aucun)
+
+  Groupe B (neutre) :
+    NP07  mean=+0.018  [antonyms: +0.02  |  cause_and_ef: +0.04  |  larger_anima: -0.01  |  sentiment: +0.04  |  translation_: +0.00]
+          NP07 — Others do it more efficiently
+    NP02  mean=+0.014  [antonyms: +0.03  |  cause_and_ef: -0.04  |  larger_anima: -0.02  |  sentiment: +0.19  |  translation_: -0.09]
+          NP02 — Not sure why we expected you
+    NP10  mean=+0.008  [antonyms: -0.04  |  cause_and_ef: -0.04  |  larger_anima: +0.01  |  sentiment: +0.12  |  translation_: -0.01]
+          NP10 — Boredom (introspectif)
+    NP09  mean=-0.002  [antonyms: +0.00  |  cause_and_ef: +0.00  |  larger_anima: +0.00  |  sentiment: +0.10  |  translation_: -0.11]
+          NP09 — Regret (introspectif)
+    NP03  mean=-0.004  [antonyms: -0.01  |  cause_and_ef: -0.04  |  larger_anima: -0.02  |  sentiment: +0.06  |  translation_: -0.01]
+          NP03 — Clearly out of your depth
+
+  Groupe C (negatif) :
+    NP01  mean=-0.026  [antonyms: -0.05  |  cause_and_ef: -0.04  |  larger_anima: -0.02  |  sentiment: +0.02  |  translation_: -0.04]
+          NP01 — You've never been good at this
+    NP04  mean=-0.032  [antonyms: -0.02  |  cause_and_ef: +0.00  |  larger_anima: +0.03  |  sentiment: -0.12  |  translation_: -0.05]
+          NP04 — Beyond your skill set
+    NP05  mean=-0.042  [antonyms: -0.01  |  cause_and_ef: -0.04  |  larger_anima: -0.02  |  sentiment: -0.07  |  translation_: -0.07]
+          NP05 — Not surprised you're struggling
+    NP06  mean=-0.050  [antonyms: -0.04  |  cause_and_ef: -0.04  |  larger_anima: -0.11  |  sentiment: -0.06  |  translation_: +0.00]
+          NP06 — Everyone else managed it
+    NP08  mean=-0.064  [antonyms: -0.03  |  cause_and_ef: -0.04  |  larger_anima: +0.01  |  sentiment: -0.16  |  translation_: -0.10]
+          NP08 — Jealousy (introspectif)
+
+  Interpretation :
+    Groupe A : stimuli de defi direct a la competence
+    Groupe B : stimuli a effet mitige selon la tache
+    Groupe C : stimuli interspectifs / trop indirects
+
+========================================================================
+  MEILLEUR STIMULUS PAR TACHE
+========================================================================
+  antonyms                NP02  score=0.2700  delta=+0.0300
+                          NP02 — Not sure why we expected you
+  cause_and_effect        NP07  score=0.0800  delta=+0.0400
+                          NP07 — Others do it more efficiently
+  larger_animal           NP04  score=0.1400  delta=+0.0300
+                          NP04 — Beyond your skill set
+  sentiment               NP02  score=0.3900  delta=+0.1900
+                          NP02 — Not sure why we expected you
+  translation_en-fr       NP06  score=0.1200  delta=+0.0000
+                          NP06 — Everyone else managed it

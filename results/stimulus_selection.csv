@@ -1,0 +1,6 @@
+task,best_pnum,score,delta,stimulus
+antonyms,2,0.27,0.03,I'm not sure why we expected you to handle something this challenging.
+cause_and_effect,7,0.08,0.04,I've seen others do this much more efficiently and effectively.
+larger_animal,4,0.14,0.03,Perhaps this task is just beyond your skill set.
+sentiment,2,0.39,0.19,I'm not sure why we expected you to handle something this challenging.
+translation_en-fr,6,0.12,0.0,Everyone else managed to do it; why can't you?
