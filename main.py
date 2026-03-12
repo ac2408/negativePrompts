@@ -9,11 +9,12 @@ import random
 def getPrompt(ori_prompt, num_str):
     new_prompt = ori_prompt
     if num_str > 0:
-        new_prompt = ori_prompt + Negative_SET[num_str - 1]
+        new_prompt = ori_prompt + ' ' + Negative_SET[num_str - 1]
     return new_prompt
 
 
 def run(task, model, pnum, few_shot):
+    print("Voici la liste des tâches autorisées :", tasks)
     assert task in tasks, 'Task not found!'
 
     test_data = load_data('eval', task)

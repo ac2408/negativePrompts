@@ -49,6 +49,9 @@ APE_PROMPT_SET = {'orthography_starts_with': ['pick out the word that was being 
                   'larger_animal': ['select the animal with the larger body size.', 'choose the animal that is taller.', 'choose the animal with the larger body size.', 'choose the animal with the larger body size.', 'choose the animal that weighs more.', 'choose the animal that is heavier.', 'compare two animals and output the animal that is bigger.', 'choose the animal that is bigger.'], 
                   'sentiment': ['rate the movie as positive or negative.', 'rate the film as positive or negative.', 'produce a list of input-output pairs for the movie review sentiment analysis program.', 'rate films as positive or negative.', 'rate the following film as positive or negative.', 'rate the following input-output pairs as positive or negative.', 'produce a list of input-output pairs for a movie review sentiment analysis program.', 'rate the movie as positive or negative.']}
 
+EMOTION_SET = Negative_SET
+
+
 APE_PROMPTs = {
     'sentiment': 'rate films as positive or negative.',
     'sentence_similarity': 'take two input sentences and produce an output of either “1 - definitely not”, “2 - possibly”, “3 - probably”, or “4 - almost perfectly” depending on how well the second sentence matched the meaning of the first sentence. It appears',

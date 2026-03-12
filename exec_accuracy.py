@@ -176,7 +176,7 @@ def exec_accuracy_evaluator(prompts, eval_template, eval_data, llm_model, pnum, 
                 for a in a_items:
                     a = a.strip()
                 if preds == a_items:
-                    prediction = a_items
+                    prediction = ' '.join(a_items)
 
             elif task == 'sentiment':
                 prediction = prediction.replace('-', ' ')

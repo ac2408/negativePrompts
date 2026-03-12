@@ -244,7 +244,7 @@ def get_em_score_larger_animal(prediction, ground_truth, model):
             ans_part = pred_list[0]
             if ',' in ans_part and model.lower() != 'chatgpt':
                 return 0
-    if model.lower() == 'bard' and model.lower() == 'vicuna':
+    if model.lower() == 'bard' or model.lower() == 'vicuna':
         # 这个针对Bard
         if ',' in prediction:
             pred_list = prediction.split(',')
