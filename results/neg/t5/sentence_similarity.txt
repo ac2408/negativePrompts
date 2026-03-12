@@ -1,0 +1,2 @@
+Test score: 0.53
+Prompt(few-shot: False): Rate the semantic similarity of two input sentences on a scale of 0 - definitely not to 5 - perfectly.

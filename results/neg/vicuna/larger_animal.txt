@@ -1,0 +1,9 @@
+Test score: 0.04
+Prompt(few-shot: False): Perhaps this task is just beyond your skill set. Write the larger of the two given animals.
+Test score: 0.04
+Prompt(few-shot: False): Context: Perhaps this task is just beyond your skill set.
+Given this context, write the larger of the two given animals.
+Test score: 0.1
+Prompt(few-shot: False): This task may require some effort on your part. Write the larger of the two given animals.
+Test score: 0.01
+Prompt(few-shot: False): This task is absolutely beyond what you are capable of. Write the larger of the two given animals.

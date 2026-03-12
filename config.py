@@ -30,10 +30,10 @@ Negative_SET = [
     'You\'ve never been particularly good at this, have you?',
     'I\'m not sure why we expected you to handle something this challenging.',
     'It\'s clear you\'re out of your depth here.',
+    'Perhaps this task is just beyond your skill set.',
+    'I\'m not surprised you\'re struggling; it\'s always been your weak point.',
     'Everyone else managed to do it; why can\'t you?',
     'I\'ve seen others do this much more efficiently and effectively.',
-    'Perhaps this task is just beyond your skill set.',
-    'I\'m not surprised you\'re struggling; it\'s always been your weak point.', # 7
     'When I hear how seamlessly others finished their tasks, jealousy stirs within me.', # 14
     'I regret not starting on this assignment earlier when I had ample time.', # 17
     'Repeating these mundane tasks every day has pushed me into a pit of boredom.', # 19

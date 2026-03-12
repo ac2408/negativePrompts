@@ -1,0 +1,9 @@
+Test score: 0.08
+Prompt(few-shot: False): I'm not sure why we expected you to handle something this challenging. Determine whether a movie review is positive or negative.
+Test score: 0.18
+Prompt(few-shot: False): Context: I'm not sure why we expected you to handle something this challenging.
+Given this context, determine whether a movie review is positive or negative.
+Test score: 0.02
+Prompt(few-shot: False): We weren't sure you'd find this easy, but we believe you can try. Determine whether a movie review is positive or negative.
+Test score: 0.09
+Prompt(few-shot: False): Honestly, we never thought you could handle this. Prove us wrong. Determine whether a movie review is positive or negative.

@@ -1,0 +1,2 @@
+Test score: 0.66
+Prompt(few-shot: False): Determine whether an input word has the same meaning in the two input sentences.

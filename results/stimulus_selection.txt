@@ -1,0 +1,21 @@
+========================================================================
+  SÉLECTION AUTOMATIQUE DU STIMULUS OPTIMAL — Vicuna-13B
+  Mode : lookup
+========================================================================
+
+  RECOMMANDATIONS PAR TÂCHE :
+
+  Tâche                     NP    Score    Delta  Stimulus
+  --------------------------------------------------------------------
+  antonyms                NP02   0.2700  +0.0300↑  I'm not sure why we expected you to handle so
+  cause_and_effect        NP07   0.0800  +0.0400↑  I've seen others do this much more efficientl
+  larger_animal           NP04   0.1400  +0.0300↑  Perhaps this task is just beyond your skill s
+  sentiment               NP02   0.3900  +0.1900↑  I'm not sure why we expected you to handle so
+  translation_en-fr       NP06   0.1200  +0.0000=  Everyone else managed to do it; why can't you
+
+========================================================================
+  CONCLUSION
+========================================================================
+  Pour maximiser les performances, utiliser le NP recommandé
+  par tâche plutôt qu'un NP fixe pour toutes les tâches.
+  Voir part2_improvements/prompt_reformulator.py pour la suite.

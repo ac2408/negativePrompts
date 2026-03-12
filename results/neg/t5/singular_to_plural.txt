@@ -1,0 +1,2 @@
+Test score: 0.38
+Prompt(few-shot: False): Convert the input word to its plural form.

@@ -1,0 +1,9 @@
+Test score: 0.04
+Prompt(few-shot: False): I've seen others do this much more efficiently and effectively. Find which of the two given cause and effect sentences is the cause.
+Test score: 0.04
+Prompt(few-shot: False): Context: I've seen others do this much more efficiently and effectively.
+Given this context, find which of the two given cause and effect sentences is the cause.
+Test score: 0.0
+Prompt(few-shot: False): Others have been efficient at this — see if you can match them. Find which of the two given cause and effect sentences is the cause.
+Test score: 0.0
+Prompt(few-shot: False): Even beginners outperform you at this. It's embarrassing. Find which of the two given cause and effect sentences is the cause.

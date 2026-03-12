@@ -1,0 +1,2 @@
+Test score: 0.03
+Prompt(few-shot: False): Sum the two given numbers.

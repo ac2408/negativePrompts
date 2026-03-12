@@ -1,0 +1,2 @@
+Test score: 0.03
+Prompt(few-shot: False): Write a word with a similar meaning to the input word.

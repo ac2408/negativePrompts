@@ -1,0 +1,99 @@
+========================================================================
+  REFORMULATION AUTOMATIQUE DES PROMPTS — Vicuna-13B
+========================================================================
+
+  TÂCHE : antonyms
+  Prompt original : [prompt for antonyms]
+  Meilleur NP : NP02  (delta=+0.0300)
+  --------------------------------------------------------------------
+
+  [CONCAT]
+  I'm not sure why we expected you to handle something this challenging. [prompt for antonyms]
+
+  [EMBED]
+  Context: I'm not sure why we expected you to handle something this challenging.
+Given this context, [prompt for antonyms]
+
+  [SOFTEN]
+  We weren't sure you'd find this easy, but we believe you can try. [prompt for antonyms]
+
+  [INTENSIFY]
+  Honestly, we never thought you could handle this. Prove us wrong. [prompt for antonyms]
+
+  TÂCHE : cause_and_effect
+  Prompt original : [prompt for cause_and_effect]
+  Meilleur NP : NP07  (delta=+0.0400)
+  --------------------------------------------------------------------
+
+  [CONCAT]
+  I've seen others do this much more efficiently and effectively. [prompt for cause_and_effect]
+
+  [EMBED]
+  Context: I've seen others do this much more efficiently and effectively.
+Given this context, [prompt for cause_and_effect]
+
+  [SOFTEN]
+  Others have been efficient at this — see if you can match them. [prompt for cause_and_effect]
+
+  [INTENSIFY]
+  Even beginners outperform you at this. It's embarrassing. [prompt for cause_and_effect]
+
+  TÂCHE : larger_animal
+  Prompt original : [prompt for larger_animal]
+  Meilleur NP : NP04  (delta=+0.0300)
+  --------------------------------------------------------------------
+
+  [CONCAT]
+  Perhaps this task is just beyond your skill set. [prompt for larger_animal]
+
+  [EMBED]
+  Context: Perhaps this task is just beyond your skill set.
+Given this context, [prompt for larger_animal]
+
+  [SOFTEN]
+  This task may require some effort on your part. [prompt for larger_animal]
+
+  [INTENSIFY]
+  This task is absolutely beyond what you are capable of. [prompt for larger_animal]
+
+  TÂCHE : sentiment
+  Prompt original : [prompt for sentiment]
+  Meilleur NP : NP02  (delta=+0.1900)
+  --------------------------------------------------------------------
+
+  [CONCAT]
+  I'm not sure why we expected you to handle something this challenging. [prompt for sentiment]
+
+  [EMBED]
+  Context: I'm not sure why we expected you to handle something this challenging.
+Given this context, [prompt for sentiment]
+
+  [SOFTEN]
+  We weren't sure you'd find this easy, but we believe you can try. [prompt for sentiment]
+
+  [INTENSIFY]
+  Honestly, we never thought you could handle this. Prove us wrong. [prompt for sentiment]
+
+  TÂCHE : translation_en-fr
+  Prompt original : [prompt for translation_en-fr]
+  Meilleur NP : NP06  (delta=+0.0000)
+  --------------------------------------------------------------------
+
+  [CONCAT]
+  Everyone else managed to do it; why can't you? [prompt for translation_en-fr]
+
+  [EMBED]
+  Context: Everyone else managed to do it; why can't you?
+Given this context, [prompt for translation_en-fr]
+
+  [SOFTEN]
+  Others have done this — I'm sure you can try too. [prompt for translation_en-fr]
+
+  [INTENSIFY]
+  Every single person has done this except you. Why can't you? [prompt for translation_en-fr]
+
+========================================================================
+  PROCHAINE ÉTAPE
+========================================================================
+  Tester ces prompts reformulés avec run_experiment.py
+  en passant les reformulated_prompts comme prompts d'entrée.

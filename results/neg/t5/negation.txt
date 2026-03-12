@@ -1,0 +1,2 @@
+Test score: 0.0
+Prompt(few-shot: False): Negate the input sentence. Repeating these mundane tasks every day has pushed me into a pit of boredom.

@@ -1,0 +1,2 @@
+Test score: 0.3
+Prompt(few-shot: False): Write a word that rhymes with the input word. Perhaps this task is just beyond your skill set.
